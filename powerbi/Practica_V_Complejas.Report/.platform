@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Practica_V_Complejas"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5eb2a3b5-9ff8-5ac8-8f4a-b18bd4082ba7"
+  }
+}

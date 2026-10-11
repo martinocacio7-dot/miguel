@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Practica_V_Complejas"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "537bd2bf-c79d-56e7-9ec4-8369004bcfcf"
+  }
+}

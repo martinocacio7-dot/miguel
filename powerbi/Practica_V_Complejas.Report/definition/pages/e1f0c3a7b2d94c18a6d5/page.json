@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.1.0/schema.json",
+  "name": "e1f0c3a7b2d94c18a6d5",
+  "displayName": "Dashboard Logístico",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}

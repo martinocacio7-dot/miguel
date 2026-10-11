@@ -1,0 +1,220 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.1.0/schema.json",
+  "name": "0657a5af3557d483595b",
+  "position": {
+    "x": 20,
+    "y": 198,
+    "z": 6,
+    "height": 318,
+    "width": 744,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "scatterChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Logistica_Global"
+                    }
+                  },
+                  "Property": "ID_Pedido"
+                }
+              },
+              "queryRef": "Logistica_Global.ID_Pedido",
+              "nativeQueryRef": "ID_Pedido",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Logistica_Global"
+                    }
+                  },
+                  "Property": "Tipo_Envio"
+                }
+              },
+              "queryRef": "Logistica_Global.Tipo_Envio",
+              "nativeQueryRef": "Tipo_Envio",
+              "active": true
+            }
+          ]
+        },
+        "X": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Logistica_Global"
+                        }
+                      },
+                      "Property": "Costo_Envio_USD"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Logistica_Global.Costo_Envio_USD)",
+              "nativeQueryRef": "Suma de Costo_Envio_USD"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Logistica_Global"
+                        }
+                      },
+                      "Property": "Dias_Entrega"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Logistica_Global.Dias_Entrega)",
+              "nativeQueryRef": "Suma de Dias_Entrega"
+            }
+          ]
+        },
+        "Size": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Logistica_Global"
+                        }
+                      },
+                      "Property": "Ventas_USD"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Logistica_Global.Ventas_USD)",
+              "nativeQueryRef": "Suma de Ventas_USD"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "trend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#52514E'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Costo de envío vs. días de entrega por pedido (tamaño = ventas)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0B0B0B'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
